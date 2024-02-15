@@ -10,8 +10,8 @@ use App\Merge;
 Fetch::$TEMP_DIRECTORY = "tmp";
 Merge::$DESTINATION_DIRECTORY = "destination";
 
-$fileName = "fileName.m3u8";
-$outputFileName = "output.ts";
+$fileName = $_GET['fn'];
+$outputFileName = $_GET['on'];
 
 try {
     $m3u8 = new M3U8($fileName);
